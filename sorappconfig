@@ -1,0 +1,3 @@
+MAIN_APP=SORTraceApplicationGUI.exe
+UPDATE_APP_PATH=http://localhost:8080/update/SORTraceApplicationGUI.exe
+
