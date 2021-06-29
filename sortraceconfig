@@ -5,6 +5,7 @@ MAC:72,361
 #Click on blank space before moving to Open Button
 MAC:209,558 
 
+Prompt:Application will Open the button for selecting SOR Files, CLick 'Yes' to continue.
 #Open Button
 #break
 D:1000
