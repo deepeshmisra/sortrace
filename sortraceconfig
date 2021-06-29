@@ -30,7 +30,7 @@ D:1000
 #break
 
 #Start Report Generation
-
+Prompt:If File are loaded, click Yes to generate reports.
 #Start Report-2 Event -> Table
 #Click on Events Menu Option
 MAC:114,40
