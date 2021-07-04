@@ -16,38 +16,12 @@ Command:Ctrl,A
 D:1000
 Enter
 D:1000
-Confirm:Application tried to load SOR Files to STV Application,
+#Confirm:Application tried to load SOR Files to STV Application,
 MAC:0,0
 
 #break
 
 #Report Generation
-
-Command:Alt,E
-Command:UP
-D:1000
-Enter
-Tab:3
-Command:Space
-D:1000
-Tab:1
-Delete
-Paste:clip-6
-D:1000
-Enter
-D:1000
-Command:Ctrl,L
-Paste:output
-Enter
-Tab:9
-Enter
-D:500
-Enter
-Tab:2
-Enter
-Confirm:Application tried to generate first report, 
-D:1000
-MAC:0,0
 			
 # Report -2
 Command:Alt,R
