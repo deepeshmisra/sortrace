@@ -16,15 +16,16 @@ D:1000
 Command:Ctrl,A
 D:1000
 Enter
-D:3000
-MAC:0,0
-D:500
+D:1000
+MAC:0,100
+D:2000
+
 #Report Generation
 
 # Report GPON
 Command:Alt,R
 Command:UP
-D:500
+D:1000
 Enter
 Tab:2
 Tab:1
@@ -53,13 +54,15 @@ Paste:output
 Enter
 Tab:9
 Enter
-D:500
+D:1000
 Enter
-D:500
+D:1000
 Tab:3
 Command:Space
 D:1000
-MAC:0,0
+MAC:0,100
+
+D:2000
 
 Command:Alt,E
 Command:UP
@@ -82,10 +85,10 @@ Enter
 D:1000
 Enter
 Tab:2
-Enter
-D:1000
+Command:Space
+D:2000
 MAC:0,0
-
+D:1000
 
 # Report -2
 Command:Alt,R
@@ -106,7 +109,7 @@ Enter
 D:1000
 Enter
 D:1000
-Tab:2
-Enter
+Tab:1
+Command:Space
 MAC:0,0
 D:1000
