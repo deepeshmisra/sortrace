@@ -52,7 +52,7 @@ MAC:0,0
 # Report -2
 Command:Alt,R
 Command:UP
-#Command:UP
+Command:UP
 D:1000
 Enter
 Tab:3
