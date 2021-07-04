@@ -1,160 +1,102 @@
-#Unload Folder - Perform Close All Action
-MAC:14,30
 D:1000
-MAC:72,361
-#Click on blank space before moving to Open Button
-MAC:209,558 
-
-Prompt:Application will Open the button for selecting SOR Files, CLick 'Yes' to continue.
-#Open Button
-#break
-D:1000
-MAC:66,63
-D:1000
-#Select File Path
-MAC:465,94
-D:1000
-#Paste SOR File Path Provided by User
-SAP:clip-1
+Command:Alt,F,UP,UP
 D:1000
 Enter
 D:1000
-#Click One File and Execute - Select All
-MAC:233,185
+Command:Ctrl,O
 D:1000
-SA
+Command:Ctrl,L
 D:1000
-#Click on Open Path to Load Files into Application
-MAC:590,490
+Delete
+Paste:clip-1
+Enter
+Tab:4
 D:1000
+Command:Ctrl,A
+D:1000
+Enter
+D:1000
+Confirm:Application tried to load SOR Files to STV Application,
+MAC:0,0
+
 #break
 
-#Start Report Generation
-Prompt:If File are loaded, click Yes to generate reports.
-#Start Report-2 Event -> Table
-#Click on Events Menu Option
-MAC:114,40
+#Report Generation
+
+Command:Alt,E
+Command:UP
+D:1000
+Enter
+Tab:3
+Command:Space
+D:1000
+Tab:1
+Delete
+Paste:clip-6
+D:1000
+Enter
+D:1000
+Command:Ctrl,L
+Paste:output
+Enter
+Tab:9
+Enter
 D:500
-#Click on Table
-MAC:126,254
-D:700
-#Click on Deviation Field
-MAC:882,619
+Enter
+Tab:2
+Enter
+Confirm:Application tried to generate first report, 
 D:1000
-SAP:clip-6
+MAC:0,0
+			
+# Report -2
+Command:Alt,R
+Command:UP
+#Command:UP
 D:1000
-#Untick Option - Open the file after Creation
-MAC:781,668
-#Click on Start Button
-MAC:1031,701
-D:2000
-#Set Output Folder Path
-MAC:1221,428
-SAP:output
+Enter
+Tab:3
+Command:Space
+D:1000
+Enter
+D:4000
+Command:Ctrl,L
+Paste:output
+Enter
+Tab:9
+Enter
 D:1000
 Enter
 D:1000
-#Click on Save Button
-MAC:1371,823
-D:1000
-#Click on Overrite Yes Option
-MAC:1019,540
-D:1000
-#Click on Close Button of this Report
-MAC:1116,702
-D:2000
-
-#Start Report-3 Report -> Report All Traces in Excel
-#Click on Report Menu Option
-MAC:144,31
-D:1000
-#Click on Report All Traces in Excel
-MAC:193,126
-D:1000
-#Untick Option - Open the file after Creation
-MAC:781,668
-#Click on Start Button
-MAC:1031,701
-D:2000
-#Set Output Folder Path
-MAC:1221,428
-SAP:output
-D:1000
+Tab:2
 Enter
-D:1000
-#Click on Save Button
-MAC:1371,823
-D:1000
-#Click on Overrite Yes Option
-MAC:1019,540
-D:1000
-#Click on Close Button of this Report
-MAC:1116,702
-D:2000
 
-Prompt:Initial 2 Reports are Generated, GPON Report is pending for Coordinate Confirmation!
 break
 
-#Start Report-1 Report -> GPON report
-#Click on Report Menu Option
-MAC:144,31
-D:1000
-#Click on GPON Report
-MAC:162,149
-
-#Click on Value - Find "A" event
-MAC:724,415
-D:1000
-SAP:clip-2
-D:1000
-
-#Click on Delta - Find "A" event
-MAC:783,418
-D:1000
-SAP:clip-3
-D:1000
-
-#Click on Value - Find "B" event
-MAC:992,500
-D:1000
-SAP:clip-4
-D:1000
-
-#Click on Delta - Find "B" event
-MAC:1057,504
-D:1000
-SAP:clip-5
-D:1000
-
-#Untick Option - Do not take event A when calculating losses
-MAC:697,674
-
-#Untick Option - Open report after creation
-MAC:697,728
-
-#Click on Start Button
-MAC:1115,760
-D:4000
-
-#Set Output Folder Path
-MAC:1333,376
-SAP:output
+# Report GPON
+Command:Alt,R
+Command:UP
+#Command:UP
 D:1000
 Enter
+Tab:3
+Command:Space
 D:1000
-#Click on Save Button
-MAC:1470,829
+Tab:2
+Command:Space
 D:1000
-#Click on Overrite Yes Option
-MAC:1019,540
+#Paste Values
+Tab:1
+Delete
+Paste:clip-2
+Tab:1
+Delete
+Paste:clip-3
+Tab:1
+Delete
+Paste:clip-4
+Tab:1
+Delete
+Paste:clip-5
 D:1000
-#Click on Close Button of this Report
-MAC:1195,758
-D:2000
-
-#Unload Folder - Perform Close All Action
-D:1000
-MAC:14,30
-D:1000
-MAC:72,361
-
+Enter
