@@ -1,3 +1,3 @@
-MAIN_APP=SORTraceAutomationGUI.exe
+MAIN_APP=SORTraceAutomationGUI_v2.exe
 UPDATE_APP_PATH=http://localhost:8080/update/SORTraceAutomationGUI.exe
 
